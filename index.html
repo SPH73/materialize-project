@@ -20,14 +20,23 @@
             min-height: 1000px;
         }
 
+        .section {
+            padding: 4vw 0;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:hover,
+        .tabs .tab a.active {
+            background-color: transparent;
+        }
+
         @media screen and (max-width: 670px) {
             header {
                 min-height: 500px;
             }
-        }
-
-        .section {
-            padding: 4vw 0;
         }
     </style>
 
@@ -95,11 +104,74 @@
 
     <!-- parallax -->
 
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/street.jpg" alt="" class="respomsive-img">
+        </div>
+    </div>
+
     <!-- services / tabs -->
+
+    <section class="container section" id="services">
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">What I do...</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam mollitia sed tempore ullam
+                    dolore, dignissimos illum possimus quod quam?
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aliquam mollitia sed tempore ullam
+                    dolore, dignissimos illum possimus quod quam?
+                </p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#photography" class="indigo-text text-darken-4">Photograpy</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#editing" class="indigo-text text-darken-4">Editing</a>
+                    </li>
+                </ul>
+
+                <div class="col s12" id="photography">
+                    <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi
+                        molestiae ipsa harum esse et nihil maxime sint voluptatibus quae.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi
+                        molestiae ipsa harum esse et nihil maxime sint voluptatibus quae.</p>
+                </div>
+                <div class="col s12" id="editing">
+                    <p class="flow-text indigo-text text-darken-4">EDITING</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi
+                        molestiae ipsa harum esse et nihil maxime sint voluptatibus quae.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi
+                        molestiae ipsa harum esse et nihil maxime sint voluptatibus quae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- parallax -->
 
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/stars.jpg" alt="" class="respomsive-img">
+        </div>
+    </div>
+
     <!-- contact form -->
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat adipisci in cumque impedit commodi
+            enim, laboriosam optio tempore totam minima rem dolor a dolorum, excepturi tempora tenetur ea quos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat adipisci in cumque impedit commodi
+            enim, laboriosam optio tempore totam minima rem dolor a dolorum, excepturi tempora tenetur ea quos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat adipisci in cumque impedit commodi
+            enim, laboriosam optio tempore totam minima rem dolor a dolorum, excepturi tempora tenetur ea quos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat adipisci in cumque impedit commodi
+            enim, laboriosam optio tempore totam minima rem dolor a dolorum, excepturi tempora tenetur ea quos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero placeat adipisci in cumque impedit commodi
+            enim, laboriosam optio tempore totam minima rem dolor a dolorum, excepturi tempora tenetur ea quos.</p>
+    </div>
 
     <!-- footer -->
 
@@ -111,7 +183,8 @@
 
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
-
+            $('.parallax').parallax();
+            $('.tabs').tabs();
         });
     </script>
 </body>
